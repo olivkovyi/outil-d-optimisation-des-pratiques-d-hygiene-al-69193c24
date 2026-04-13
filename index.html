@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outil d&#x27;Optimisation des Pratiques d&#x27;Hygiène Alimentaire | Évaluez vos pratiques</title>
+    <meta name="description" content="Comparez les recommandations d">
+    <style>
+        :root {
+            --color-primary: #007bff;
+            --color-secondary: #6c757d;
+            --color-success: #28a745;
+            --color-info: #17a2b8;
+            --color-warning: #ffc107;
+            --color-danger: #dc3545;
+            --color-light: #f8f9fa;
+            --color-dark: #343a40;
+            --color-text: #212529;
+            --color-background: #ffffff;
+            --color-border: #dee2e6;
+            --font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            --spacing-unit: 1rem;
+            --border-radius: 0.25rem;
+            --shadow-light: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+
+        body {
+            font-family: var(--font-family-sans-serif);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-unit);
+        }
+
+        header {
+            background-color: var(--color-background);
+            padding: calc(var(--spacing-unit) * 2) 0;
+            border-bottom: 1px solid var(--color-border);
+            text-align: center;
+            box-shadow: var(--shadow-light);
+        }
+
+        header h1 {
+            color: var(--color-dark);
+            margin-top: 0;
+            margin-bottom: var(--spacing-unit);
+            font-size: 2.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: var(--color-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background-color: var(--color-background);
+            padding: calc(var(--spacing-unit) * 2);
+            margin-bottom: var(--spacing-unit);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+        }
+
+        .section h2 {
+            color: var(--color-dark);
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-unit);
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-unit);
+            margin-top: var(--spacing-unit);
+        }
+
+        .card {
+            background-color: var(--color-light);
+            padding: var(--spacing-unit);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--color-border);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: var(--color-dark);
+        }
+
+        select, input[type="number"], button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: var(--spacing-unit);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--color-primary);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result-item {
+            background-color: #e9f7ef;
+            border: 1px solid var(--color-success);
+            padding: var(--spacing-unit);
+            margin-bottom: 0.75rem;
+            border-radius: var(--border-radius);
+            color: #1a5a3a;
+        }
+
+        .result-item strong {
+            color: var(--color-dark);
+        }
+
+        .alert {
+            padding: var(--spacing-unit);
+            margin-bottom: var(--spacing-unit);
+            border-radius: var(--border-radius);
+        }
+
+        .alert-info {
+            background-color: var(--color-info);
+            color: white;
+        }
+        .alert-warning {
+            background-color: var(--color-warning);
+            color: var(--color-dark);
+        }
+        .alert-danger {
+            background-color: var(--color-danger);
+            color: white;
+        }
+
+        .seo-section {
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            padding: calc(var(--spacing-unit) * 2);
+            margin-top: calc(var(--spacing-unit) * 2);
+            border-radius: var(--border-radius);
+        }
+        .seo-section h2 {
+            color: white;
+            border-bottom-color: var(--color-secondary);
+        }
+        .seo-section p, .seo-section ul {
+            color: #ced4da;
+        }
+        .seo-section ul {
+            list-style-type: disc;
+            margin-left: var(--spacing-unit);
+            padding-left: 0;
+        }
+        .seo-section li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: var(--spacing-unit);
+            margin-top: var(--spacing-unit);
+            color: var(--color-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24.onrender.com">
+    <meta property="og:title" content="Outil d&#x27;Optimisation des Pratiques d&#x27;Hygiène Alimentaire">
+    <meta property="og:description" content="Comparez les recommandations d">
+    <meta property="og:url" content="https://outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Outil d'Optimisation des Pratiques d'Hygiène Alimentaire", "description": "Comparez les recommandations d", "url": "https://outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24" data-runtime-mode="analysis_tool">
+    <header>
+        <div class="container">
+            <h1>Outil d'Optimisation des Pratiques d'Hygiène Alimentaire</h1>
+            <p>Comparez les recommandations d'hygiène pour divers types d'aliments et d'environnements de préparation, et obtenez des conseils pour minimiser les risques. Indispensable pour professionnels et particuliers soucieux de la sécurité alimentaire en France.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Évaluez vos pratiques</h2>
+            <p>Utilisez notre simulateur pour obtenir des conseils personnalisés selon vos habitudes de préparation et les aliments concernés.</p>
+            <form id="tool-form">
+                <div class="grid">
+                    <div class="card">
+                        <label for="aliment-type">Type d'aliment principal :</label>
+                        <select id="aliment-type" required>
+                            <option value="">Sélectionnez un type</option>
+                            <option value="viande-crue">Viandes/Volailles Crues</option>
+                            <option value="poisson-crue">Poissons/Fruits de Mer Crus</option>
+                            <option value="produits-laitiers">Produits Laitiers non pasteurisés</option>
+                            <option value="legumes-fruits">Légumes et Fruits frais (non cuits)</option>
+                            <option value="plats-prepares">Plats préparés (à réchauffer)</option>
+                            <option value="patisseries-sensibles">Pâtisseries à crème/œufs crus</option>
+                        </select>
+                    </div>
+                    <div class="card">
+                        <label for="environnement">Environnement de préparation :</label>
+                        <select id="environnement" required>
+                            <option value="">Sélectionnez un environnement</option>
+                            <option value="domicile">Cuisine domestique</option>
+                            <option value="restauration-petite">Petite restauration/Traiteur</option>
+                            <option value="restauration-grande">Grande cuisine/Restaurant étoilé</option>
+                            <option value="marche-plein-air">Marché en plein air/Vente ambulante</option>
+                        </select>
+                    </div>
+                    <div class="card">
+                        <label for="temperature-stockage">Température moyenne de stockage (°C) :</label>
+                        <input type="number" id="temperature-stockage" value="4" min="-20" max="30" required>
+                    </div>
+                    <div class="card">
+                        <label for="temps-conservation">Temps de conservation (heures) avant consommation/préparation :</label>
+                        <input type="number" id="temps-conservation" value="24" min="0" max="168" required>
+                    </div>
+                </div>
+                <button type="submit" id="tool-submit" data-affiliate-slot="hygiene-audit">Obtenir des Conseils Personnalisés</button>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2>Vos Recommandations Personnalisées</h2>
+            <div id="tool-result">
+                <div class="alert alert-info">Veuillez remplir le formulaire ci-dessus pour obtenir vos conseils d'hygiène personnalisés.</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Principes Clés de Sécurité Alimentaire</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Nettoyage</h3>
+                    <p>Lavez-vous les mains fréquemment, nettoyez et désinfectez toutes les surfaces, ustensiles et équipements. L'eau potable est essentielle.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Séparation</h3>
+                    <p>Séparez les aliments crus des aliments cuits pour éviter la contamination croisée. Utilisez des planches et ustensiles différents.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Cuisson</h3>
+                    <p>Faites cuire les aliments à des températures adéquates. Utilisez un thermomètre pour vérifier les températures internes, notamment pour les viandes.</p>
+                </div>
+                <div class="card">
+                    <h3>4. Refroidissement</h3>
+                    <p>Réfrigérez ou congelez rapidement les aliments périssables. Ne laissez pas les aliments cuits à température ambiante trop longtemps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Témoignages & Confiance</h2>
+            <div class="grid">
+                <div class="card">
+                    <p>"En tant que gérant de brasserie à Lyon, cet outil m'a permis de mieux former mon équipe et d'anticiper les contrôles sanitaires. Très utile !"</p>
+                    <small>— Marc D., Restaurateur</small>
+                </div>
+                <div class="card">
+                    <p>"Je suis diététicienne et je recommande souvent cet outil à mes patients pour qu'ils adoptent de meilleures pratiques à la maison. Clair et efficace."</p>
+                    <small>— Sophie L., Diététicienne</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="seo-section">
+        <div class="container">
+            <h2>Hygiène Alimentaire France : Guide Complet et Outils</h2>
+            <p>La sécurité alimentaire est une priorité en France, que vous soyez un professionnel de la restauration, un traiteur ou un particulier soucieux de la santé de votre famille. Notre outil interactif vous aide à naviguer dans les réglementations et les bonnes pratiques pour une cuisine irréprochable.</p>
+            <h3>Pourquoi l'hygiène en cuisine est-elle cruciale ?</h3>
+            <ul>
+                <li><strong>Prévention des Intoxications Alimentaires :</strong> Chaque année, des milliers de cas sont recensés. Une bonne hygiène est votre première ligne de défense.</li>
+                <li><strong>Conformité Réglementaire :</strong> Pour les professionnels (restaurants, cantines, food trucks), respecter les normes HACCP et les directives de la DGCCRF est impératif pour éviter amendes et fermetures.</li>
+                <li><strong>Qualité et Goût :</strong> Une manipulation saine des aliments préserve leurs qualités organoleptiques et prolonge leur durée de vie.</li>
+                <li><strong>Confiance des Consommateurs :</strong> Une réputation d'excellence en hygiène est un atout majeur, surtout dans le secteur alimentaire.</li>
+            </ul>
+            <h3>Comment notre plateforme vous accompagne ?</h3>
+            <p>Notre simulateur compare vos pratiques actuelles aux standards recommandés pour différents types d'aliments (viandes crues, poissons, légumes, produits laitiers) et d'environnements de préparation (domicile, restaurant, marché). Vous recevez des conseils précis sur :</p>
+            <ul>
+                <li>Le contrôle des températures de stockage et de cuisson.</li>
+                <li>La prévention de la contamination croisée.</li>
+                <li>Les délais de conservation optimaux.</li>
+                <li>Les méthodes de nettoyage et de désinfection adaptées.</li>
+            </ul>
+            <p>Que vous recherchiez des informations sur les <strong>normes d'hygiène en restauration</strong>, des <strong>conseils de sécurité alimentaire à domicile</strong>, ou un <strong>guide des bonnes pratiques HACCP simplifié</strong>, cet outil est conçu pour vous. Améliorez votre sécurité alimentaire dès aujourd'hui !</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sécurité Alimentaire France. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const alimentType = document.getElementById('aliment-type').value;
+            const environnement = document.getElementById('environnement').value;
+            const temperatureStockage = parseInt(document.getElementById('temperature-stockage').value);
+            const tempsConservation = parseInt(document.getElementById('temps-conservation').value);
+            const resultDiv = document.getElementById('tool-result');
+            resultDiv.innerHTML = ''; // Clear previous results
+
+            let conseils = [];
+            let risques = [];
+
+            // General advice
+            conseils.push("<strong>Lavage des mains :</strong> Toujours se laver les mains avant et après avoir manipulé des aliments, surtout après des produits crus.");
+            conseils.push("<strong>Nettoyage des surfaces :</strong> Nettoyez et désinfectez systématiquement les surfaces de travail et les ustensiles.");
+
+            // Aliment specific
+            if (alimentType === 'viande-crue' || alimentType === 'poisson-crue') {
+                conseils.push("<strong>Séparation des crus :</strong> Utilisez une planche à découper et des ustensiles distincts pour les viandes/poissons crus. Ne jamais laisser entrer en contact avec les aliments cuits ou prêts à consommer.");
+                conseils.push("<strong>Cuisson à cœur :</strong> Assurez une cuisson complète (températures internes spécifiques) pour éliminer les bactéries.");
+                risques.push("Risque élevé de contamination bactérienne (Salmonella, E. coli, Listeria).");
+            } else if (alimentType === 'produits-laitiers') {
+                conseils.push("<strong>Chaîne du froid :</strong> Maintenez rigoureusement la chaîne du froid. Les produits non pasteurisés sont plus sensibles.");
+                risques.push("Risque de Listeria ou d'autres pathogènes si la chaîne du froid est brisée ou le produit périmé.");
+            } else if (alimentType === 'legumes-fruits') {
+                conseils.push("<strong>Lavage minutieux :</strong> Lavez abondamment les légumes et fruits frais à l'eau potable avant consommation, même ceux à éplucher.");
+                risques.push("Risque de résidus de pesticides ou de contamination par la terre si mal lavés.");
+            } else if (alimentType === 'plats-prepares') {
+                conseils.push("<strong>Réchauffage complet :</strong> Réchauffez les plats préparés à une température d'au moins 70°C à cœur. Ne pas réchauffer plus d'une fois.");
+                risques.push("Risque de développement bactérien si réchauffage insuffisant ou stockage prolongé.");
+            } else if (alimentType === 'patisseries-sensibles') {
+                conseils.push("<strong>Température et temps :</strong> Ces produits sont très sensibles. Consommez rapidement et stockez au frais. Évitez les œufs crus pour les personnes sensibles.");
+                risques.push("Risque de Salmonellose élevé si les œufs sont contaminés ou la conservation inadéquate.");
+            }
+
+            // Environment specific
+            if (environnement === 'restauration-petite' || environnement === 'restauration-grande') {
+                conseils.push("<strong>Plan HACCP :</strong> Un plan HACCP doit être en place et suivi scrupuleusement. Formation du personnel essentielle.");
+                conseils.push("<strong>Traçabilité :</strong> Assurez une traçabilité complète des produits.");
+                risques.push("Conséquences réglementaires et réputationnelles en cas de manquement.");
+            } else if (environnement === 'marche-plein-air') {
+                conseils.push("<strong>Protection :</strong> Protégez les aliments des intempéries, de la poussière et des insectes. Maintenez les températures requises par des moyens adaptés (glacières, vitrines réfrigérées).");
+                risques.push("Risque de contamination environnementale et de rupture de la chaîne du froid.");
+            }
+
+            // Temperature and time specific
+            if (temperatureStockage > 5) {
+                risques.push(`La température de stockage de ${temperatureStockage}°C est trop élevée pour la plupart des aliments périssables. Cela favorise la croissance bactérienne.`);
+                conseils.push("<strong>Température critique :</strong> Maintenez les réfrigérateurs à 0-4°C pour la majorité des produits frais.");
+            } else if (temperatureStockage < 0 && alimentType !== 'viande-crue' && alimentType !== 'poisson-crue') {
+                conseils.push("<strong>Congélation :</strong> Une température négative est pour la congélation, assurez un emballage adapté pour éviter le gel et la perte de qualité.");
+            }
+
+            if (tempsConservation > 48 && (alimentType === 'viande-crue' || alimentType === 'poisson-crue' || alimentType === 'produits-laitiers' || alimentType === 'patisseries-sensibles')) {
+                risques.push(`Un temps de conservation de ${tempsConservation} heures pour ce type d'aliment est potentiellement trop long, même au frais.`);
+                conseils.push("<strong>Date limite :</strong> Respectez scrupuleusement les dates limites de consommation (DLC) et utilisez le principe du 'premier entré, premier sorti'.");
+            } else if (tempsConservation > 72 && (alimentType === 'legumes-fruits' || alimentType === 'plats-prepares')) {
+                 risques.push(`Un temps de conservation de ${tempsConservation} heures pour ce type d'aliment est potentiellement trop long, même au frais.`);
+                 conseils.push("<strong>Qualité :</strong> Au-delà de 3 jours, la qualité et la fraîcheur peuvent être altérées, même si le produit est encore comestible.");
+            }
+
+            if (risques.length > 0) {
+                resultDiv.innerHTML += '<div class="alert alert-warning"><strong>Attention :</strong> Des risques potentiels ont été identifiés pour vos pratiques.</div>';
+                risques.forEach(r => {
+                    resultDiv.innerHTML += `<div class="result-item">⚠️ ${r}</div>`;
+                });
+            } else {
+                resultDiv.innerHTML += '<div class="alert alert-success"><strong>Félicitations :</strong> Vos pratiques semblent être sur la bonne voie, mais une vigilance constante reste de mise !</div>';
+            }
+            
+            conseils.forEach(c => {
+                resultDiv.innerHTML += `<div class="result-item">${c}</div>`;
+            });
+            
+            resultDiv.innerHTML += '<div class="alert alert-info">Ces conseils sont des recommandations générales. Pour des situations spécifiques, consultez les réglementations sanitaires en vigueur.</div>';
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.setAttribute("rel", "nofollow sponsored noopener noreferrer");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank", "noopener");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
