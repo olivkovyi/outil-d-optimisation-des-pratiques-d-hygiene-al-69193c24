@@ -1,5 +1,5 @@
 {
-  "run_id": "run-1778151546514",
+  "run_id": "run-1778152329643",
   "job_index": 1,
   "params": {
     "owner_user_id": "user-1774822953462",
@@ -7,15 +7,15 @@
     "owner_display_name": "Administrator",
     "count": 1,
     "archetype": "tool",
-    "market": "Growth republish",
+    "market": "Comparez les recommandations d",
     "language": "fr",
     "country": "FR",
     "brief": "Comparez les recommandations d",
     "notes": "Growth module republish of an updated local artifact.",
     "import_notes": "Growth module republish of an updated local artifact.",
-    "growth_job_id": "growth-1778151447165",
+    "growth_job_id": "growth-1778152198723",
     "growth_slug": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
-    "growth_kind": "affiliate",
+    "growth_kind": "content",
     "dashboard_mode": "builder",
     "network_site_format": "forum",
     "network_primary_topic": "",
@@ -54,8 +54,8 @@
     "forced_slug": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
     "site_idea_title": "Outil d'Optimisation des Pratiques d'Hygiène Alimentaire",
     "site_idea_summary": "Comparez les recommandations d",
-    "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
-    "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
+    "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
+    "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
     "import_analysis_model": "preserved-analysis"
   },
   "import_analysis": {
@@ -66,7 +66,7 @@
     "archetype": "tool",
     "language": "fr",
     "country": "FR",
-    "market": "Growth republish",
+    "market": "Comparez les recommandations d",
     "characteristics": [
       "imported static site",
       "ready file deploy",
@@ -74,6 +74,6 @@
     ],
     "suggested_slug": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24"
   },
-  "source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
-  "deploy_root": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24"
+  "source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
+  "deploy_root": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24"
 }
