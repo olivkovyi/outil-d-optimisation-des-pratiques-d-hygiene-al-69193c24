@@ -11,17 +11,17 @@
   "country": "FR",
   "url": null,
   "expected_url": "https://outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24.onrender.com",
-  "created": "2026-05-07T11:00:28.936194+00:00",
+  "created": "2026-05-07T11:13:03.647306+00:00",
   "owner_user_id": "user-1774822953462",
   "owner_username": "admin",
   "owner_display_name": "Administrator",
   "status": "generated",
-  "run_id": "run-1778151546514",
+  "run_id": "run-1778152329643",
   "publish_target": "render",
   "mode": "production",
   "source_type": "imported",
-  "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
-  "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
+  "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
+  "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
   "import_resolution_note": null,
   "analysis": {
     "model": "preserved-analysis",
@@ -70,6 +70,35 @@
           "No visible affiliate links or product recommendations in excerpt - verify these aren't hidden or deceptively placed in full page"
         ]
       }
+    },
+    "content": {
+      "status": "ready",
+      "updated_at": "2026-05-07T11:11:50.097388+00:00",
+      "article_count": 1,
+      "anchor_article_count": 0,
+      "plain_url_article_count": 1,
+      "batch_anchor_article_count": 1,
+      "batch_plain_url_article_count": 4,
+      "total_batch_articles": 5,
+      "links": 1,
+      "anchor_keywords": [
+        "spinaura casino"
+      ],
+      "section_title": "Ressources complémentaires",
+      "pages": [
+        {
+          "slug": "outil-d-optimisation-des-pratiques-d-hygiene-al-f93c14d6",
+          "path": "/var/lib/utility-site-studio/sites/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/insights/outil-d-optimisation-des-pratiques-d-hygiene-al-f93c14d6.html",
+          "title": "Outil d'Optimisation des Pratiques d'Hygiène Alimentaire — Guide 1",
+          "link_mode": "plain_url_text"
+        }
+      ],
+      "review": {
+        "status": "pass",
+        "score": 82,
+        "summary": "A safer fallback content bundle was applied with clean supporting pages and a restrained homepage knowledge section.",
+        "issues": []
+      }
     }
   },
   "ahrefs": {
@@ -110,7 +139,7 @@
       "status": "published",
       "repo_name": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
       "repo_url": "https://github.com/olivkovyi/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
-      "updated_at": 1776040719
+      "updated_at": 1778151638
     },
     "deployment": {
       "status": "ready",
@@ -118,14 +147,14 @@
       "service_id": "srv-d7e3mq3eo5us73818ip0",
       "project_name": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
       "requested_project_name": null,
-      "deployment_id": "dep-d7e3mqbeo5us73818iu0",
+      "deployment_id": "dep-d7u72g8sfn5c73coiisg",
       "deployment_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
       "public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
       "expected_public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
       "dashboard_url": "https://dashboard.render.com/static/srv-d7e3mq3eo5us73818ip0",
       "ready_state": "live",
       "target": "production",
-      "updated_at": 1776040733,
+      "updated_at": 1778151656,
       "requested_public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
       "url_source": "alias"
     },
@@ -200,38 +229,38 @@
             "detail": "Editorial desktop layout avoids negative overlap offsets on the tool panel"
           }
         ],
-        "checked_at": 1778151526
+        "checked_at": 1778152310
       },
       "functional": {
         "status": "pass",
         "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
-        "target_url": "http://127.0.0.1:41963/index.html?__qa=functional",
+        "target_url": "http://127.0.0.1:35701/index.html?__qa=functional",
         "mode": "native-form",
         "headline": "Attention :",
         "primary_url": "",
         "desktop": {
           "status": "pass",
           "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:41963/index.html?__qa=functional",
+          "target_url": "http://127.0.0.1:35701/index.html?__qa=functional",
           "viewport": "desktop",
           "mode": "native-form",
           "headline": "Attention :",
           "primary_url": "",
           "reported_viewport": "desktop",
-          "updated_at": 1778151527
+          "updated_at": 1778152311
         },
         "mobile": {
           "status": "pass",
           "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:41963/index.html?__qa=functional",
+          "target_url": "http://127.0.0.1:35701/index.html?__qa=functional",
           "viewport": "mobile",
           "mode": "native-form",
           "headline": "Attention :",
           "primary_url": "",
           "reported_viewport": "mobile",
-          "updated_at": 1778151528
+          "updated_at": 1778152312
         },
-        "updated_at": 1778151529
+        "updated_at": 1778152312
       },
       "remote": {
         "status": "pass",
@@ -252,7 +281,7 @@
             "detail": "Remote HTML contains a body tag"
           }
         ],
-        "checked_at": 1778151529
+        "checked_at": 1778152312
       },
       "visual": {
         "status": "pass",
@@ -268,21 +297,21 @@
           "detail": "430x932 screenshot captured.",
           "relative_url": "/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-mobile.png"
         },
-        "updated_at": 1778151532
+        "updated_at": 1778152315
       },
       "lighthouse": {
         "status": "pass",
         "scores": {
           "performance": 100,
-          "accessibility": 93,
+          "accessibility": 94,
           "best-practices": 96,
           "seo": 100
         },
         "report_path": "/var/lib/utility-site-studio/data/qa/lighthouse/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-lighthouse.json",
-        "updated_at": 1778151546
+        "updated_at": 1778152329
       },
       "qa_live_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-      "updated_at": "2026-05-07T10:59:06.351463+00:00"
+      "updated_at": "2026-05-07T11:12:09.400874+00:00"
     }
   }
 }
