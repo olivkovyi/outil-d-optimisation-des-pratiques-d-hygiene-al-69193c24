@@ -9,13 +9,13 @@
   "page_blueprint": "imported-source",
   "language": "fr",
   "country": "FR",
-  "url": null,
-  "expected_url": "https://outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24.onrender.com",
+  "url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
+  "expected_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
   "created": "2026-05-07T11:13:03.647306+00:00",
   "owner_user_id": "user-1774822953462",
   "owner_username": "admin",
   "owner_display_name": "Administrator",
-  "status": "generated",
+  "status": "deployed",
   "run_id": "run-1778152329643",
   "publish_target": "render",
   "mode": "production",
@@ -34,13 +34,182 @@
     ]
   },
   "github": {
-    "status": "pending"
+    "status": "published",
+    "repo_name": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
+    "repo_url": "https://github.com/olivkovyi/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
+    "updated_at": 1778152401
   },
   "deployment": {
-    "status": "pending"
+    "status": "ready",
+    "provider": "render",
+    "service_id": "srv-d7e3mq3eo5us73818ip0",
+    "project_name": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
+    "requested_project_name": null,
+    "deployment_id": "dep-d7u78f1j2pic739jprig",
+    "deployment_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
+    "public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
+    "expected_public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
+    "dashboard_url": "https://dashboard.render.com/static/srv-d7e3mq3eo5us73818ip0",
+    "ready_state": "live",
+    "target": "production",
+    "updated_at": 1778152419,
+    "requested_public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
+    "url_source": "alias"
   },
   "qa": {
-    "status": "pending"
+    "status": "pass",
+    "local": {
+      "status": "pass",
+      "checks": [
+        {
+          "name": "index_exists",
+          "status": "pass",
+          "detail": "index.html exists"
+        },
+        {
+          "name": "meta_exists",
+          "status": "pass",
+          "detail": "meta.json exists"
+        },
+        {
+          "name": "robots_exists",
+          "status": "pass",
+          "detail": "robots.txt exists"
+        },
+        {
+          "name": "has_title",
+          "status": "pass",
+          "detail": "HTML contains a title tag"
+        },
+        {
+          "name": "has_viewport",
+          "status": "pass",
+          "detail": "HTML contains a mobile viewport meta tag"
+        },
+        {
+          "name": "has_canonical",
+          "status": "pass",
+          "detail": "HTML contains a canonical URL"
+        },
+        {
+          "name": "bundle_size",
+          "status": "pass",
+          "detail": "Generated HTML stays below 250KB"
+        },
+        {
+          "name": "functional_qa_hook",
+          "status": "pass",
+          "detail": "Generated HTML includes the browser QA hook used before deploy."
+        },
+        {
+          "name": "inline_script_syntax",
+          "status": "pass",
+          "detail": "Inline JavaScript syntax check passed."
+        },
+        {
+          "name": "robots_google_only",
+          "status": "pass",
+          "detail": "robots.txt allows only Google crawlers and blocks all other bots."
+        },
+        {
+          "name": "no_meta_noindex",
+          "status": "pass",
+          "detail": "Generated HTML does not inject a noindex robots meta tag."
+        },
+        {
+          "name": "no_internal_branding",
+          "status": "pass",
+          "detail": "Generated site does not leak internal platform branding or internal product naming."
+        },
+        {
+          "name": "desktop_layout_overlap",
+          "status": "pass",
+          "detail": "Editorial desktop layout avoids negative overlap offsets on the tool panel"
+        }
+      ],
+      "checked_at": 1778152419
+    },
+    "functional": {
+      "status": "pass",
+      "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
+      "target_url": "http://127.0.0.1:36687/index.html?__qa=functional",
+      "mode": "native-form",
+      "headline": "Attention :",
+      "primary_url": "",
+      "desktop": {
+        "status": "pass",
+        "detail": "Le formulaire natif a mis a jour la zone de resultat.",
+        "target_url": "http://127.0.0.1:36687/index.html?__qa=functional",
+        "viewport": "desktop",
+        "mode": "native-form",
+        "headline": "Attention :",
+        "primary_url": "",
+        "reported_viewport": "desktop",
+        "updated_at": 1778152420
+      },
+      "mobile": {
+        "status": "pass",
+        "detail": "Le formulaire natif a mis a jour la zone de resultat.",
+        "target_url": "http://127.0.0.1:36687/index.html?__qa=functional",
+        "viewport": "mobile",
+        "mode": "native-form",
+        "headline": "Attention :",
+        "primary_url": "",
+        "reported_viewport": "mobile",
+        "updated_at": 1778152421
+      },
+      "updated_at": 1778152422
+    },
+    "remote": {
+      "status": "pass",
+      "checks": [
+        {
+          "name": "remote_200",
+          "status": "pass",
+          "detail": "Remote deployment returned HTTP 200"
+        },
+        {
+          "name": "remote_title",
+          "status": "pass",
+          "detail": "Remote HTML contains a title tag"
+        },
+        {
+          "name": "remote_body",
+          "status": "pass",
+          "detail": "Remote HTML contains a body tag"
+        }
+      ],
+      "checked_at": 1778152422
+    },
+    "visual": {
+      "status": "pass",
+      "desktop": {
+        "status": "pass",
+        "path": "/var/lib/utility-site-studio/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-desktop.png",
+        "detail": "1440x960 screenshot captured.",
+        "relative_url": "/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-desktop.png"
+      },
+      "mobile": {
+        "status": "pass",
+        "path": "/var/lib/utility-site-studio/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-mobile.png",
+        "detail": "430x932 screenshot captured.",
+        "relative_url": "/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-mobile.png"
+      },
+      "updated_at": 1778152424
+    },
+    "lighthouse": {
+      "status": "pass",
+      "scores": {
+        "performance": 100,
+        "accessibility": 94,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "report_path": "/var/lib/utility-site-studio/data/qa/lighthouse/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-lighthouse.json",
+      "updated_at": 1778152439
+    },
+    "qa_live_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
+    "updated_at": "2026-05-07T11:13:59.079568+00:00"
   },
   "features": [
     "Imported from ready static files",
@@ -131,187 +300,5 @@
     "opportunity_label": "Warming up",
     "opportunity_detail": "89 ref domains · shared-host: DR/AR смотри осторожно."
   },
-  "previous_live_state": {
-    "url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-    "expected_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-    "requested_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-    "github": {
-      "status": "published",
-      "repo_name": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
-      "repo_url": "https://github.com/olivkovyi/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
-      "updated_at": 1778151638
-    },
-    "deployment": {
-      "status": "ready",
-      "provider": "render",
-      "service_id": "srv-d7e3mq3eo5us73818ip0",
-      "project_name": "outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24",
-      "requested_project_name": null,
-      "deployment_id": "dep-d7u72g8sfn5c73coiisg",
-      "deployment_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-      "public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-      "expected_public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-      "dashboard_url": "https://dashboard.render.com/static/srv-d7e3mq3eo5us73818ip0",
-      "ready_state": "live",
-      "target": "production",
-      "updated_at": 1778151656,
-      "requested_public_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-      "url_source": "alias"
-    },
-    "qa": {
-      "status": "pass",
-      "local": {
-        "status": "pass",
-        "checks": [
-          {
-            "name": "index_exists",
-            "status": "pass",
-            "detail": "index.html exists"
-          },
-          {
-            "name": "meta_exists",
-            "status": "pass",
-            "detail": "meta.json exists"
-          },
-          {
-            "name": "robots_exists",
-            "status": "pass",
-            "detail": "robots.txt exists"
-          },
-          {
-            "name": "has_title",
-            "status": "pass",
-            "detail": "HTML contains a title tag"
-          },
-          {
-            "name": "has_viewport",
-            "status": "pass",
-            "detail": "HTML contains a mobile viewport meta tag"
-          },
-          {
-            "name": "has_canonical",
-            "status": "pass",
-            "detail": "HTML contains a canonical URL"
-          },
-          {
-            "name": "bundle_size",
-            "status": "pass",
-            "detail": "Generated HTML stays below 250KB"
-          },
-          {
-            "name": "functional_qa_hook",
-            "status": "pass",
-            "detail": "Generated HTML includes the browser QA hook used before deploy."
-          },
-          {
-            "name": "inline_script_syntax",
-            "status": "pass",
-            "detail": "Inline JavaScript syntax check passed."
-          },
-          {
-            "name": "robots_google_only",
-            "status": "pass",
-            "detail": "robots.txt allows only Google crawlers and blocks all other bots."
-          },
-          {
-            "name": "no_meta_noindex",
-            "status": "pass",
-            "detail": "Generated HTML does not inject a noindex robots meta tag."
-          },
-          {
-            "name": "no_internal_branding",
-            "status": "pass",
-            "detail": "Generated site does not leak internal platform branding or internal product naming."
-          },
-          {
-            "name": "desktop_layout_overlap",
-            "status": "pass",
-            "detail": "Editorial desktop layout avoids negative overlap offsets on the tool panel"
-          }
-        ],
-        "checked_at": 1778152310
-      },
-      "functional": {
-        "status": "pass",
-        "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
-        "target_url": "http://127.0.0.1:35701/index.html?__qa=functional",
-        "mode": "native-form",
-        "headline": "Attention :",
-        "primary_url": "",
-        "desktop": {
-          "status": "pass",
-          "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:35701/index.html?__qa=functional",
-          "viewport": "desktop",
-          "mode": "native-form",
-          "headline": "Attention :",
-          "primary_url": "",
-          "reported_viewport": "desktop",
-          "updated_at": 1778152311
-        },
-        "mobile": {
-          "status": "pass",
-          "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:35701/index.html?__qa=functional",
-          "viewport": "mobile",
-          "mode": "native-form",
-          "headline": "Attention :",
-          "primary_url": "",
-          "reported_viewport": "mobile",
-          "updated_at": 1778152312
-        },
-        "updated_at": 1778152312
-      },
-      "remote": {
-        "status": "pass",
-        "checks": [
-          {
-            "name": "remote_200",
-            "status": "pass",
-            "detail": "Remote deployment returned HTTP 200"
-          },
-          {
-            "name": "remote_title",
-            "status": "pass",
-            "detail": "Remote HTML contains a title tag"
-          },
-          {
-            "name": "remote_body",
-            "status": "pass",
-            "detail": "Remote HTML contains a body tag"
-          }
-        ],
-        "checked_at": 1778152312
-      },
-      "visual": {
-        "status": "pass",
-        "desktop": {
-          "status": "pass",
-          "path": "/var/lib/utility-site-studio/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-desktop.png",
-          "detail": "1440x960 screenshot captured.",
-          "relative_url": "/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-desktop.png"
-        },
-        "mobile": {
-          "status": "pass",
-          "path": "/var/lib/utility-site-studio/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-mobile.png",
-          "detail": "430x932 screenshot captured.",
-          "relative_url": "/static/generated-qa/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-mobile.png"
-        },
-        "updated_at": 1778152315
-      },
-      "lighthouse": {
-        "status": "pass",
-        "scores": {
-          "performance": 100,
-          "accessibility": 94,
-          "best-practices": 96,
-          "seo": 100
-        },
-        "report_path": "/var/lib/utility-site-studio/data/qa/lighthouse/outil-d-optimisation-des-pratiques-d-hygiene-al-69193c24-lighthouse.json",
-        "updated_at": 1778152329
-      },
-      "qa_live_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com",
-      "updated_at": "2026-05-07T11:12:09.400874+00:00"
-    }
-  }
+  "requested_url": "https://outil-d-optimisation-des-pratiques-d.onrender.com"
 }
